@@ -1,0 +1,19 @@
+/* container + cards */
+.container { max-width: 900px; margin: 24px auto; padding: 0 16px; }
+.card { background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 16px; margin-bottom: 16px; }
+.page-header h1 { margin: 0 0 4px; }
+.subtitle { color: #666; margin: 0; }
+
+/* form */
+.form-row { display: flex; flex-direction: column; margin-bottom: 12px; }
+.form-row label { font-weight: 600; margin-bottom: 6px; }
+input, textarea, button { padding: 10px; border: 1px solid #ddd; border-radius: 8px; }
+button { cursor: pointer; }
+
+/* actions */
+.actions { display: flex; gap: 8px; align-items: center; }
+
+/* table */
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 10px; border-bottom: 1px solid #eee; text-align: left; }
+thead th { background: #f8f8f8; }

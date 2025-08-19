@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Catalog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header class="page-header">
+        <h1>Smartphone Store</h1>
+        <p>Simple frontend for Spring Boot Product API</p>
+    </header>
+
+    <section class="card form-card">
+        <h2>Add Product</h2>
+        <form id="productForm">
+            <div class="form-row">
+                <label for="nameInput">Name</label>
+                <input id="nameInput" name="name" type="text" placeholder="e.g. Apple Iphone 15" required>
+            </div>
+
+            <div class="form-row">
+                <label for="descInput">Description</label>
+                <textarea id="descInput" name="description" placeholder="e.g. 8 GB RAM, 128 GB ROM" rows="2"></textarea>
+            </div>
+
+            <div class="form-row">
+                <label for="priceInput">Price</label>
+                <input id="priceInput" name="price" type="number" placeholder="e.g 100000" step="0.01" min="0" required>
+            </div>
+
+            <div class="form-row">
+                <label for="qtyInput">Quantity</label>
+                <input id="qtyInput" name="quantity" type="number" placeholder="Number of items left" min="0">
+            </div>
+            <button type="submit" id="addBtn">Add Product</button>
+        </form>
+    </section>
+    <section class="card actions-card">
+        <div class="actions">
+            <button id="viewBtn" type="button">View All Products</button>
+            <input id="searchInput" type="text" placeholder="Search by name...">
+            <button id="searchBtn" type="button">Search</button>
+        </div>
+    </section>
+
+
+    <section class="card table-card">
+        <h2>products</h2>
+        <table id="productsTable">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody id="productsBody"></tbody>
+        </table>
+    </section>
+</div>
+    <script src="script.js" defer></script>
+</body>
+</html>
