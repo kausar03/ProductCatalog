@@ -32,18 +32,27 @@ This project demonstrates **CRUD operations** (Create, Read, Update, Delete) for
 
 ## 📂 Project Structure
 product-catalog/
+
 ├── src/main/java/com/example/productcatalog/
+
 │ ├── controller/ # REST APIs
+
 │ ├── entity/ # Product model
+
 │ ├── repository/ # JPA repository
+
 │ └── ProductCatalogApplication.java
-│
+
 ├── src/main/resources/
+
 │ ├── application.properties # MySQL configuration
-│
+
 ├── frontend/
+
 │ ├── index.html # UI Page
+
 │ ├── style.css # Styling
-│ └── script.js # API integration
-│
+
+│└── script.js # API integration
+
 └── pom.xml
